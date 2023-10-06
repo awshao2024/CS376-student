@@ -137,7 +137,7 @@ public class BarGraph : MonoBehaviour
         // have half the widget for positive values and half for negative ones.
         // Leave the localScale's y component as is.
         Vector2 new_scale = BarTransform.localScale;
-        new_scale.x = value;
+        new_scale.x = value / Max;
 
         if(signedDisplay)
         {
@@ -184,7 +184,7 @@ public class BarGraph : MonoBehaviour
         // TODO: Instantiate Prefab and put it inside of the game object that has the canvas.
         // Set its position to position and its rotation to the magic value Quaternion.identity, which means
         // "don't rotate it".
-        GameObject go = Instantiate(Prefab, position, Quaternion.identity, canvas.gameObject.transform);  // Change null to a call to Instantiate
+        GameObject go = Instantiate(Prefab, position, Quaternion.identity, canvas.transform);  // Change null to a call to Instantiate
 
         // TODO: Give the GameObject the specified name
         go.name = name;

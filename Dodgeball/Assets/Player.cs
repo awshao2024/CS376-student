@@ -12,6 +12,11 @@ public class Player : MonoBehaviour
     public GameObject OrbPrefab;
 
     /// <summary>
+    /// Storage field for the Rigidbody2D component
+    /// </summary>
+    public Rigidbody2D RigidBody;
+
+    /// <summary>
     /// How fast our engines can accelerate us
     /// </summary>
     public float EnginePower = 1;
@@ -25,6 +30,14 @@ public class Player : MonoBehaviour
     /// How fast we should shoot our orbs
     /// </summary>
     public float OrbVelocity = 10;
+
+    /// <summary>
+    /// Get the Rigidbody2D component on Start
+    /// </summary>
+    void Start()
+    {
+        RigidBody = GetComponent<Rigidbody2D>();
+    }
 
     /// <summary>
     /// Handle moving and firing.
@@ -64,7 +77,11 @@ public class Player : MonoBehaviour
     /// </summary>
     void Manoeuvre()
     {
-        // TODO
+        float x = Input.GetAxis("Horizontal");
+        float y = Input.GetAxis("Vertical");
+
+        Vector2 dir = new Vector2(x, y);
+        RigidBody.AddForce(dir * EnginePower);
     }
 
     /// <summary>

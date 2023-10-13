@@ -56,7 +56,17 @@ public class Player : MonoBehaviour
     /// </summary>
     void MaybeFire()
     {
-        // TODO
+        if(Input.GetButton("Fire"))
+        {
+            // FPS drop mode
+            // for(int i=0; i<10; i++)
+            // {
+            //     FireOrb();
+            // }
+ 
+            // Normal mode
+            FireOrb();
+        }
     }
 
     /// <summary>
@@ -66,7 +76,9 @@ public class Player : MonoBehaviour
     /// </summary>
     private void FireOrb()
     {
-        // TODO
+        GameObject orb = Instantiate(OrbPrefab, transform.right + transform.position, Quaternion.identity);
+
+        orb.GetComponent<Rigidbody2D>().velocity = OrbVelocity * transform.right;
     }
 
     /// <summary>
@@ -77,11 +89,9 @@ public class Player : MonoBehaviour
     /// </summary>
     void Manoeuvre()
     {
-        float x = Input.GetAxis("Horizontal");
-        float y = Input.GetAxis("Vertical");
+        RigidBody.AddForce(new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * EnginePower);
 
-        Vector2 dir = new Vector2(x, y);
-        RigidBody.AddForce(dir * EnginePower);
+        RigidBody.angularVelocity = Input.GetAxis("Rotate") * RotateSpeed;
     }
 
     /// <summary>

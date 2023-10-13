@@ -21,11 +21,21 @@ public class Spawner : MonoBehaviour
     public float FreeRadius = 10;
 
     /// <summary>
+    /// The next time at which an enemy should spawn
+    /// </summary>
+    private float NextSpawnTime = 0;
+
+    /// <summary>
     /// Check if we need to spawn and if so, do so.
     /// </summary>
     // ReSharper disable once UnusedMember.Local
     void Update()
     {
-        // TODO
+        if(Time.time > NextSpawnTime)
+        {
+            Instantiate(Prefab, SpawnUtilities.RandomFreePoint(FreeRadius), Quaternion.identity);
+
+            NextSpawnTime += SpawnInterval;
+        }
     }
 }

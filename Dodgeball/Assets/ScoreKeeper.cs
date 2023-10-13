@@ -50,6 +50,6 @@ public class ScoreKeeper : MonoBehaviour
     /// <param name="delta"></param>
     private void ScorePointsInternal(int delta)
     {
-        // TODO
+        scoreDisplay.text = "Score: " + (Score += delta);
     }
 }

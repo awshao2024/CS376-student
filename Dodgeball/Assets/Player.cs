@@ -59,13 +59,13 @@ public class Player : MonoBehaviour
         if(Input.GetButton("Fire"))
         {
             // FPS drop mode
-            // for(int i=0; i<10; i++)
-            // {
-            //     FireOrb();
-            // }
+            for(int i=0; i<10; i++)
+            {
+                FireOrb();
+            }
  
             // Normal mode
-            FireOrb();
+            // FireOrb();
         }
     }
 

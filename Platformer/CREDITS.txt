@@ -1,0 +1,3 @@
+Audio:
+ping - Pixabay (https://pixabay.com/sound-effects/ping-82822/)
+sword_hit - Pixabay (https://pixabay.com/sound-effects/sword-hit-7160/)

@@ -1,0 +1,13 @@
+Audio:
+Sword Swing (Sword Sound 2) - Pixabay (https://pixabay.com/sound-effects/sword-sound-2-36274/)
+Spell Cast (Sword Schwing) - Pixabay (https://pixabay.com/sound-effects/sword-schwing-40520/)
+Dash (Whoosh) - Pixabay (https://pixabay.com/sound-effects/search/woosh/)
+Collide (Pillow Smash) - Pixabay (https://pixabay.com/sound-effects/pillow-smash-82516/)
+Pickup (The Notification Email) - UNIVERSFIELD (https://pixabay.com/sound-effects/the-notification-email-143029/)
+Powerup (Magic) - UNIVERSFIELD (https://pixabay.com/sound-effects/magic-142974/)
+Kill Notice (Soft Notice) - UNIVERSFIELD (https://pixabay.com/sound-effects/soft-notice-146623/)
+Score (Fantasy UI Button 6) - Pixabay (https://pixabay.com/sound-effects/fantasy-ui-button-6-102219/)
+Victory Sound (WinFantasia) - Pixabay (https://pixabay.com/sound-effects/winfantasia-6912/)
+Death Sound (Tubular Bell of Death) - Pixabay (https://pixabay.com/sound-effects/tubular-bell-of-death-89485/)
+Victory Music (Enchanted Score) - SamuelFrancisJohnson (https://pixabay.com/sound-effects/enchanted-score-7622/)
+Death Music (Mystical Dark Atmosphere) - UNIVERSFIELD (https://pixabay.com/music/mystery-mystical-dark-atmosphere-174806/)
